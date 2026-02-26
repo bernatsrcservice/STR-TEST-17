@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRC | Proveedor Oficial Pirelli Competición - Neumáticos de Carreras</title>
+    <meta name="description" content="SRC Service Racing in Competition: Proveedor oficial Pirelli Competición en España. Acceso exclusivo a compuestos de Mundial, SBK y JuniorGP. Venta a profesionales y amateurs. Sede en Manresa.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f0f0f',
+                            gray: '#1a1a1a',
+                            yellow: '#ffd700', // Racing Yellow
+                            red: '#dc2626',    // Racing Red
+                            text: '#e5e5e5'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Exo 2', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles for Racing Feel */
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .carbon-bg {
+            background-image: linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a),
+            linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a);
+            background-size: 10px 10px;
+            background-position: 0 0, 5px 5px;
+            opacity: 0.1;
+        }
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        .btn-primary {
+            background: #ffd700;
+            color: #000;
+            font-weight: 800;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .btn-primary:hover {
+            background: #e6c200;
+            transform: translateX(5px);
+        }
+        .btn-outline {
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            font-weight: 800;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background: #ffd700;
+            color: #000;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <!-- SRC Logo -->
+                    <img src="logo.png" alt="SRC Logo" class="h-8 sm:h-12 w-auto object-contain">
+                    <!-- Divisor -->
+                    <div class="h-6 sm:h-8 w-px bg-white/20 mx-3 sm:mx-4"></div>
+                    <!-- Pirelli Logo -->
+                    <img src="Pirelli-logo.png" alt="Pirelli Official Supplier" class="h-4 sm:h-6 w-auto object-contain">
+                    
+                    <span class="hidden lg:block ml-4 text-xs font-bold tracking-widest text-white uppercase border-l border-white/20 pl-4">Service Racing<br>in Competition</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="hover:text-brand-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Inicio</a>
+                        <a href="#medidas" class="hover:text-brand-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Medidas Oficiales</a>
+                        <a href="#presencia" class="hover:text-brand-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Campeonatos</a>
+                        <a href="#suscripcion" class="hover:text-brand-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Suscribirse</a>
+                        <a href="#contacto" class="btn-primary px-6 py-2 text-sm">Contacto Directo</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <span class="sr-only">Abrir menú</span>
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="inicio" class="relative bg-brand-dark overflow-hidden min-h-screen flex items-center">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center opacity-40" style="background-image: url('fondo-principal.jpg');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full pt-20">
+            <div class="border-l-4 border-brand-yellow pl-6 mb-8">
+                <h2 class="text-brand-yellow font-bold tracking-widest uppercase text-sm mb-2">LA POTENCIA SIN CONTROL NO SIRVE DE NADA</h2>
+                <h1 class="text-5xl md:text-7xl font-display font-black text-white leading-none mb-4">
+                    PROVEEDOR OFICIAL DE <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">PIRELLI COMPETICIÓN</span>
+                </h1>
+            </div>
+            <p class="mt-4 max-w-2xl text-xl text-gray-300 font-light">
+                Neumáticos oficiales de WorldSBK, MotoGP y JuniorGP disponibles para equipos y pilotos exigentes. 
+                Compuestos y medidas que no encontrarás en distribuidores convencionales.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                <a href="#contacto" class="btn-primary px-8 py-4 text-center flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> Consultar Stock y Precios
+                </a>
+                <a href="#medidas" class="btn-outline px-8 py-4 text-center border-white text-white hover:bg-white hover:text-black flex items-center justify-center gap-2">
+                    Ver Medidas Oficiales
+                </a>
+            </div>
+            
+            <!-- Badges -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-80">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="shield-check" class="text-brand-yellow w-8 h-8"></i>
+                    <span class="text-sm font-bold uppercase leading-tight">Proveedor<br>Oficial</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="gauge" class="text-brand-yellow w-8 h-8"></i>
+                    <span class="text-sm font-bold uppercase leading-tight">Neumáticos<br>WSBK & GP</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="zap" class="text-brand-yellow w-8 h-8"></i>
+                    <span class="text-sm font-bold uppercase leading-tight">Stock<br>Inmediato</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="users" class="text-brand-yellow w-8 h-8"></i>
+                    <span class="text-sm font-bold uppercase leading-tight">Asesoramiento<br>Técnico</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro / Who We Are -->
+    <section class="py-20 bg-brand-gray relative clip-slant">
+        <div class="carbon-bg absolute inset-0"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-display font-bold text-3xl text-white mb-6">NO SOMOS UN DISTRIBUIDOR CONVENCIONAL</h2>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        En <span class="text-white font-bold">SRC (Service Racing in Competition)</span>, gestionamos la conexión directa entre la fábrica y la pista. Con sede en <span class="text-brand-yellow">Manresa (España)</span>, somos el enlace vital para equipos profesionales y pilotos privados que requieren neumáticos de primera línea.
+                    </p>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Nuestra condición de <strong>Proveedor Oficial Pirelli de Competición</strong> nos permite ofrecer acceso exclusivo y al mejor precio a compuestos y carcasas desarrolladas en los campeonatos más exigentes del mundo. Vendemos más que neumáticos de calle; vendemos tecnología para bajar tiempos.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-brand-red w-5 h-5 mr-2 mt-1"></i>
+                            <span class="text-gray-300">Acceso a medidas de Alta Competición (WSBK, Moto2, GP).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-brand-red w-5 h-5 mr-2 mt-1"></i>
+                            <span class="text-gray-300">Asesoramiento técnico real.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-brand-red w-5 h-5 mr-2 mt-1"></i>
+                            <span class="text-gray-300">Los mejores precios del mercado.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-black p-1 rounded-lg shadow-2xl transform rotate-1 border border-white/10">
+                   <div class="bg-brand-dark aspect-video rounded flex items-center justify-center relative overflow-hidden">
+                       <video src="video-pirelli.mp4" autoplay loop muted playsinline class="object-cover w-full h-full opacity-80"></video>
+                       <div class="absolute bottom-4 right-4 bg-brand-yellow text-black text-xs font-bold px-3 py-1 uppercase z-10">Official Supplier</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Contact (WhatsApp) - CON NUEVO FONDO CLARITO + CAPA OSCURA -->
+    <section id="contacto" class="py-24 relative overflow-hidden">
+        <!-- Imagen de fondo clarita -->
+        <div class="absolute inset-0 bg-[url('fondo-contactar.jpg')] bg-cover bg-center z-0"></div>
+        <!-- Capa oscura para que el texto se lea perfectamente (85% opacidad) -->
+        <div class="absolute inset-0 bg-brand-dark/85 backdrop-blur-[2px] z-0"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-display font-black text-4xl md:text-5xl text-white mb-6 uppercase italic">
+                Optimiza tu rendimiento en pista hoy
+            </h2>
+            <p class="text-xl text-gray-300 mb-10 font-light">
+                Tienes acceso a los mismos neumáticos que utilizan los equipos ganadores. <br>
+                <span class="text-brand-yellow font-bold">Stock limitado de neumáticos oficiales.</span>
+            </p>
+
+            <div class="bg-brand-gray/90 backdrop-blur-md p-8 rounded-xl shadow-2xl border border-white/10 max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <a href="https://wa.me/34625320696" class="flex flex-col items-center justify-center bg-[#25D366] hover:bg-[#20bd5a] text-white p-6 rounded-lg transition-transform hover:-translate-y-1">
+                        <i data-lucide="message-circle" class="w-10 h-10 mb-2"></i>
+                        <span class="font-bold text-lg">WhatsApp Directo</span>
+                        <span class="text-xs opacity-90 mt-1">Respuesta inmediata</span>
+                    </a>
+                    
+                    <a href="tel:+34625320696" class="flex flex-col items-center justify-center bg-white hover:bg-gray-100 text-brand-dark p-6 rounded-lg transition-transform hover:-translate-y-1">
+                        <i data-lucide="phone" class="w-10 h-10 mb-2 text-brand-red"></i>
+                        <span class="font-bold text-lg">Llamar Ahora</span>
+                        <span class="text-xs opacity-70 mt-1">Asesoramiento técnico</span>
+                    </a>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-gray-700">
+                    <form class="space-y-4" onsubmit="sendToWhatsApp(event)">
+                        <input id="wp-nombre" type="text" required placeholder="Nombre / Equipo" class="w-full bg-black/50 border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                        <input id="wp-email" type="email" required placeholder="Email de contacto" class="w-full bg-black/50 border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                        <select id="wp-medidas" required class="w-full bg-black/50 border border-gray-600 rounded p-3 text-gray-400 focus:border-brand-yellow focus:outline-none">
+                            <option value="" disabled selected>Interesado en medidas...</option>
+                            <option value="SBK (125/70 - 200/65)">SBK (125/70 - 200/65)</option>
+                            <option value="Supersport">Supersport</option>
+                            <option value="Moto3 / Talent">Moto3 / Talent</option>
+                            <option value="R7 Cup">R7 Cup</option>
+                        </select>
+                        <div class="flex items-start mt-2 text-left">
+                            <input type="checkbox" id="wp-privacidad" required class="mt-1 mr-2 accent-brand-yellow">
+                            <label for="wp-privacidad" class="text-xs text-gray-400">He leído y acepto la <a href="legales.html#privacidad" target="_blank" class="text-brand-yellow hover:underline">Política de Privacidad</a>.</label>
+                        </div>
+                        <button type="submit" class="w-full btn-primary py-3 font-bold text-black mt-2">SOLICITAR PRESUPUESTO</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs Section - AHORA MÁS COMPACTO (DASHBOARD STYLE) -->
+    <section id="medidas" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-red font-bold tracking-wider uppercase text-sm">Ingeniería de Precisión</span>
+                <h2 class="font-display font-black text-4xl text-white mt-2">MEDIDAS OFICIALES Y CATEGORÍAS</h2>
+                <p class="mt-3 text-brand-yellow font-bold text-base uppercase tracking-wider max-w-2xl mx-auto">"We race what we sell and we sell what we race"</p>
+            </div>
+
+            <!-- Cuadrícula 4 columnas en desktop para no dejar huecos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                
+                <!-- Card: Superbike -->
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-display font-bold text-lg text-white leading-none">SBK & Moto2/GP</h3>
+                        <i data-lucide="trophy" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-4 border-b border-white/10 pb-3">La referencia absoluta en la alta competición mundial.</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Delantero</span>
+                            <span class="text-sm font-mono text-white">125/70 R17</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Trasero</span>
+                            <span class="text-sm font-mono text-white">200/65 R17</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Supersport -->
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-display font-bold text-lg text-white leading-none">Supersport (SSP)</h3>
+                        <i data-lucide="activity" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-4 border-b border-white/10 pb-3">Configuración estándar y opción "Big Size" (ESBK).</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Delantero</span>
+                            <span class="text-sm font-mono text-white">120/70 R17</span>
+                            <span class="text-[10px] text-gray-500 block mt-1">Opción Big Size: 125/70</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Trasero</span>
+                            <span class="text-sm font-mono text-white">190/60 R17</span>
+                            <span class="text-[10px] text-gray-500 block mt-1">Opción Big Size: 200/65</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Moto3 / Talent -->
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-display font-bold text-lg text-white leading-none">Moto3 & Talent</h3>
+                        <i data-lucide="chevrons-up" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-4 border-b border-white/10 pb-3">Especificaciones para prototipos de formación.</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Delantero</span>
+                            <span class="text-sm font-mono text-white">100/70 R17</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Trasero</span>
+                            <span class="text-sm font-mono text-white">120/70 R17</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: R7 Cup -->
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-display font-bold text-lg text-white leading-none">R7 Cup</h3>
+                        <i data-lucide="flag" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-4 border-b border-white/10 pb-3">Durabilidad extrema con agarre de alta competición.</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Delantero</span>
+                            <span class="text-sm font-mono text-white">120/70 R17</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Trasero</span>
+                            <span class="text-sm font-mono text-white">180/60 R17</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Mini Velocidad -->
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group md:col-span-2 lg:col-span-4">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-display font-bold text-lg text-white leading-none">Mini Velocidad</h3>
+                        <i data-lucide="zap" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-4 border-b border-white/10 pb-3">Agarre excepcional para futuras promesas en llantas de 10" y 12".</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-gray-500 font-bold block">Del. 10"</span>
+                            <span class="text-sm font-mono text-white">100/80-10</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase text-gray-500 font-bold block">Tras. 10"</span>
+                            <span class="text-sm font-mono text-white">120/80-10</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Del. 12"</span>
+                            <span class="text-sm font-mono text-white">100/90-12</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-red font-bold block">Tras. 12"</span>
+                            <span class="text-sm font-mono text-white">120/80-12</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Presence & Championships -->
+    <section id="presencia" class="py-20 bg-brand-gray relative">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="font-display font-bold text-3xl text-white mb-6">DOMINIO EN PISTA</h2>
+                    <p class="text-gray-300 mb-6">
+                        La presencia de SRC no se limita a la venta. Somos parte activa del ecosistema de competición en España y Europa. Nuestros neumáticos son testados y utilizados donde nacen los campeones.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-brand-yellow pl-4">
+                            <h4 class="text-white font-bold text-lg">Junior GP</h4>
+                            <p class="text-sm text-gray-400">Antesala directa a MotoGP. Suministramos neumáticos capaces de soportar la exigencia de las futuras estrellas mundiales.</p>
+                        </div>
+                        <div class="border-l-2 border-brand-red pl-4">
+                            <h4 class="text-white font-bold text-lg">Campeonato de España de Superbike (ESBK)</h4>
+                            <p class="text-sm text-gray-400">Presencia constante en el certamen nacional más competitivo del mundo.</p>
+                        </div>
+                        <div class="border-l-2 border-gray-500 pl-4">
+                            <h4 class="text-white font-bold text-lg">Test Oficiales y Trackdays</h4>
+                            <p class="text-sm text-gray-400">Desde test de pretemporada mundialista hasta eventos organizados para pilotos amateur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+                     <div class="bg-gray-800 h-48 rounded-lg flex items-center justify-center p-4 border border-white/5 bg-cover bg-center relative overflow-hidden group shadow-lg" style="background-image: url('fondo-juniorgp.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="relative font-display font-black text-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] uppercase text-center z-10">Junior<br>GP</span>
+                     </div>
+                     <div class="bg-gray-800 h-48 rounded-lg flex items-center justify-center p-4 border border-white/5 mt-8 bg-cover bg-center relative overflow-hidden group shadow-lg" style="background-image: url('fondo-esbk.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="relative font-display font-black text-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] uppercase text-center z-10">ESBK</span>
+                     </div>
+                     <div class="bg-gray-800 h-48 rounded-lg flex items-center justify-center p-4 border border-white/5 bg-cover bg-center relative overflow-hidden group shadow-lg" style="background-image: url('fondo-wsbk.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="relative font-display font-black text-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] uppercase text-center z-10">World<br>SBK</span>
+                     </div>
+                     <div class="bg-gray-800 h-48 rounded-lg flex items-center justify-center p-4 border border-white/5 mt-8 bg-cover bg-center relative overflow-hidden group shadow-lg" style="background-image: url('fondo-motogp.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="relative font-display font-black text-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] uppercase text-center z-10">Moto<br>GP</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose SRC / Logistics -->
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center font-display font-bold text-3xl text-white mb-12">LOGÍSTICA Y SERVICIO INTEGRAL</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-brand-gray p-8 rounded-lg text-center border-t-4 border-brand-yellow">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-dark mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-yellow"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5"/><path d="M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Envíos Nacionales</h3>
+                    <p class="text-gray-400 text-sm">Logística rápida y segura. Recibe tus neumáticos listos para montar en cualquier punto de la península.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-brand-gray p-8 rounded-lg text-center border-t-4 border-brand-yellow">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-dark mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-yellow"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Recogida en Manresa</h3>
+                    <p class="text-gray-400 text-sm">Servicio de recogida en nuestra sede central. Atención directa y verificación de los neumáticos in situ.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-brand-gray p-8 rounded-lg text-center border-t-4 border-brand-yellow">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-dark mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-yellow"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Soporte Técnico</h3>
+                    <p class="text-gray-400 text-sm">No solo vendemos gomas. Asesoramos sobre presiones y compuestos según temperatura y asfalto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Suscripción -->
+    <section id="suscripcion" class="py-16 bg-black border-t border-gray-800 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <i data-lucide="mail" class="w-10 h-10 text-brand-yellow mx-auto mb-4"></i>
+            <h2 class="font-display font-bold text-3xl text-white mb-4">SUSCRIBIRSE</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Únete a nuestra base de datos. Sé el primero en enterarte de la disponibilidad de compuestos oficiales, trackdays y precios exclusivos.</p>
+            
+            <form id="subscribe-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfQbwY3vXa3H_9o9cYsgu3FK9uORkbCkRg0jWT-6ocM9snYPA/formResponse" method="POST" onsubmit="submitToGoogle(event)" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
+                <!-- Tipo -->
+                <div class="md:col-span-2">
+                    <select name="entry.1001733497" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-gray-400 focus:border-brand-yellow focus:outline-none">
+                        <option value="" disabled selected>¿Eres un equipo o un particular?</option>
+                        <option value="Equipo">Equipo</option>
+                        <option value="Particular">Particular</option>
+                    </select>
+                </div>
+                <!-- Nombre -->
+                <div>
+                    <input type="text" name="entry.1617724048" placeholder="Nombre completo o del Equipo" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                </div>
+                <!-- Email -->
+                <div>
+                    <input type="email" name="entry.216338073" placeholder="Email" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                </div>
+                <!-- Teléfono -->
+                <div>
+                    <input type="tel" name="entry.1111651115" placeholder="Teléfono de contacto" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                </div>
+                <!-- Idioma -->
+                <div>
+                    <select name="entry.699061243" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-gray-400 focus:border-brand-yellow focus:outline-none">
+                        <option value="" disabled selected>Idioma de preferencia...</option>
+                        <option value="Español">Español</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Italiano">Italiano</option>
+                    </select>
+                </div>
+                <!-- Campeonato -->
+                <div class="md:col-span-2">
+                    <select name="entry.444856821" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-gray-400 focus:border-brand-yellow focus:outline-none">
+                        <option value="" disabled selected>Campeonato principal...</option>
+                        <option value="Copa España">Copa España</option>
+                        <option value="ESBK">ESBK</option>
+                        <option value="FIM JR GP">FIM JR GP</option>
+                        <option value="Mini Velocidad">Mini Velocidad</option>
+                        <option value="Moto GP">Moto GP</option>
+                        <option value="WSBK">WSBK</option>
+                        <option value="Ningún campeonato (Rodadas/Amateur)">Ningún campeonato (Rodadas/Amateur)</option>
+                    </select>
+                </div>
+                <!-- Checkbox Legal -->
+                <div class="md:col-span-2 flex items-start mt-2">
+                    <input type="checkbox" id="gf-privacidad" required class="mt-1 mr-2 accent-brand-yellow">
+                    <label for="gf-privacidad" class="text-xs text-gray-400">He leído y acepto la <a href="legales.html#privacidad" target="_blank" class="text-brand-yellow hover:underline">Política de Privacidad</a> para el tratamiento de mis datos.</label>
+                </div>
+                <!-- Botón -->
+                <div class="md:col-span-2 mt-2">
+                    <button type="submit" class="btn-primary py-3 px-8 font-bold text-black rounded w-full hover:scale-[1.02] transition-transform">UNIRME A LA BASE DE DATOS</button>
+                </div>
+            </form>
+
+            <!-- Mensaje de Éxito -->
+            <div id="success-message" style="display:none;" class="mt-4 p-8 bg-brand-dark border border-brand-yellow/50 rounded-xl max-w-2xl mx-auto shadow-2xl">
+                <i data-lucide="check-circle" class="w-16 h-16 text-brand-yellow mx-auto mb-4"></i>
+                <h3 class="font-display font-black text-2xl text-white mb-2 uppercase">¡Suscripción completada!</h3>
+                <p class="text-gray-400">Tus datos han sido registrados en nuestra base de datos oficial. Nos pondremos en contacto contigo pronto.</p>
+            </div>
+
+            <p class="text-xs text-gray-600 mt-6 text-center">Cero spam. Solo información vital para bajar tus tiempos.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-4">
+                    <img src="logo.png" alt="SRC Logo" class="h-10 w-auto object-contain">
+                    <div class="h-8 w-px bg-white/10"></div>
+                    <img src="Pirelli-logo.png" alt="Pirelli Logo" class="h-5 w-auto object-contain opacity-70">
+                </div>
+                <p class="mt-6 text-sm max-w-xs">
+                    Service Racing in Competition. Proveedor oficial Pirelli Competición. Neumáticos exclusivos para campeonatos, equipos profesionales y pilotos exigentes.
+                </p>
+                <div class="mt-6 flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold uppercase text-sm tracking-wider mb-4">Ubicación</h4>
+                <p class="text-sm">Manresa, Barcelona (España)</p>
+                <p class="text-sm mt-2">Envíos a toda la península</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase text-sm tracking-wider mb-4">Contacto</h4>
+                <a href="mailto:jordi@srcservice.com" class="block text-sm hover:text-brand-yellow transition-colors mb-1">jordi@srcservice.com</a>
+                <a href="mailto:bernat@srcservice.com" class="block text-sm hover:text-brand-yellow transition-colors mb-1">bernat@srcservice.com</a>
+                <a href="mailto:admin2@srcservice.com" class="block text-sm hover:text-brand-yellow transition-colors mb-3">admin2@srcservice.com</a>
+                <p class="text-sm font-bold">+34 625 32 06 96</p>
+                <div class="mt-4">
+                    <span class="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+                    <span class="text-xs text-green-500 font-bold uppercase">Abierto ahora</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-gray-900 text-xs text-center flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2024 SRC - Service Racing in Competition. Todos los derechos reservados.</p>
+            <div class="flex space-x-4">
+                <a href="legales.html#aviso-legal" class="text-gray-500 hover:text-white transition-colors">Aviso Legal</a>
+                <a href="legales.html#privacidad" class="text-gray-500 hover:text-white transition-colors">Política de Privacidad</a>
+                <a href="legales.html#cookies" class="text-gray-500 hover:text-white transition-colors">Política de Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-brand-dark/95 backdrop-blur border-t-2 border-brand-yellow/50 z-50 shadow-[0_-15px_50px_rgba(0,0,0,0.7)]">
+        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <p class="text-sm text-gray-300 text-center sm:text-left leading-relaxed">
+                Utilizamos cookies propias y de terceros para mejorar la navegación y garantizar el correcto funcionamiento de la web. Al pulsar "Aceptar", usted consiente nuestro uso de cookies. Puede leer más en nuestra <a href="legales.html#cookies" class="text-brand-yellow font-bold hover:underline">Política de Cookies</a>.
+            </p>
+            <div class="flex shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
+                <button onclick="document.getElementById('cookie-banner').style.display='none'" class="btn-primary px-8 py-3 text-sm font-bold w-full sm:w-auto tracking-wide">ACEPTAR COOKIES</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Enviar formulario principal por WhatsApp
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // Evita que la página se recargue
+
+            const nombre = document.getElementById('wp-nombre').value;
+            const email = document.getElementById('wp-email').value;
+            const medidas = document.getElementById('wp-medidas').value;
+
+            // Construir el mensaje
+            const mensaje = `Hola, soy ${nombre}. Mi email es ${email} y estoy interesado en ${medidas}.`;
+
+            // Codificar el texto para la URL de WhatsApp
+            const textoCodificado = encodeURIComponent(mensaje);
+
+            // Crear el enlace directo a WhatsApp
+            const url = `https://wa.me/34625320696?text=${textoCodificado}`;
+
+            // Abrir WhatsApp
+            window.open(url, '_blank');
+        }
+
+        // Enviar formulario a Google Forms de forma nativa e invisible
+        function submitToGoogle(event) {
+            event.preventDefault(); // Evita que la página recargue de forma estándar
+            
+            const form = event.target;
+            const data = new FormData(form);
+            const action = form.action;
+
+            // Enviar datos por detrás forzando el modo "no-cors" para saltar bloqueos de seguridad
+            fetch(action, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: data
+            }).then(() => {
+                // Ocultar formulario y mostrar mensaje de éxito inmediatamente
+                form.style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            }).catch((error) => {
+                alert('Hubo un error de conexión. Por favor, inténtalo de nuevo.');
+                console.error(error);
+            });
+        }
+    </script>
+</body>
+</html>
