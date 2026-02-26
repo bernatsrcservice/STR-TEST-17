@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos Legals | SRC</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f0f0f',
+                            gray: '#1a1a1a',
+                            yellow: '#ffd700',
+                            red: '#dc2626',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Exo 2', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e5e5e5; }
+        .legal-content h2 { color: #ffd700; font-family: 'Exo 2', sans-serif; font-weight: 800; font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem; text-transform: uppercase; }
+        .legal-content h3 { color: #ffffff; font-weight: 600; font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .legal-content p { margin-bottom: 1rem; color: #a3a3a3; line-height: 1.6; font-size: 0.95rem; }
+        .legal-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #a3a3a3; font-size: 0.95rem; }
+        .legal-content li { margin-bottom: 0.5rem; }
+        .btn-primary { background: #ffd700; color: #000; font-weight: 800; text-transform: uppercase; transition: all 0.3s ease; clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%); }
+        .btn-primary:hover { background: #e6c200; transform: translateX(5px); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Barra de navegació minimalista -->
+    <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Logotip SRC" class="h-12 w-auto object-contain">
+                </div>
+                <div>
+                    <a href="index.html" class="btn-primary px-6 py-2 text-sm flex items-center gap-2">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i> Tornar a la web
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- AVÍS LEGAL -->
+        <section id="aviso-legal" class="mb-20 pt-10 border-t border-gray-800">
+            <h1 class="font-display font-black text-4xl text-white mb-2">Avís Legal</h1>
+            <p class="text-brand-red font-bold uppercase text-sm mb-8">Informació General en compliment de la LSSI</p>
+            
+            <div class="legal-content">
+                <p>En compliment del que disposa la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSI-CE), s'informa als usuaris de les següents dades del titular d'aquest lloc web:</p>
+                <ul>
+                    <li><strong>Titular:</strong> Service Racing in Competition</li>
+                    <li><strong>NIF/CIF:</strong> B65561151</li>
+                    <li><strong>Domicili Social:</strong> Carrer Pica d'Estats, 123. Sant Fruitós de Bages, 08272, Barcelona (Espanya)</li>
+                    <li><strong>Correu electrònic de contacte:</strong> admin2@srcservice.com</li>
+                    <li><strong>Telèfon:</strong> +34 625 32 06 96</li>
+                </ul>
+
+                <h2>Ús del Lloc Web</h2>
+                <p>L'accés i/o ús d'aquest portal atribueix la condició d'USUARI, que accepta, des d'aquest accés i/o ús, les Condicions Generals d'Ús aquí reflectides. L'USUARI assumeix la responsabilitat de l'ús del portal.</p>
+
+                <h2>Propietat Intel·lectual i Industrial</h2>
+                <p>SRC per si mateixa o com a cessionària, és titular de tots els drets de propietat intel·lectual i industrial de la seva pàgina web, així com dels elements continguts en la mateixa (a títol enunciatiu: imatges, so, àudio, vídeo, programari o textos; marques o logotips, combinacions de colors, estructura i disseny). Queden expressament prohibides la reproducció, la distribució i la comunicació pública, inclosa la seva modalitat de posada a disposició, de la totalitat o part dels continguts d'aquesta pàgina web, amb finalitats comercials, en qualsevol suport i per qualsevol mitjà tècnic, sense l'autorització de SRC.</p>
+                
+                <h2>Exclusió de garanties i responsabilitat</h2>
+                <p>SRC no es fa responsable, en cap cas, dels danys i perjudicis de qualsevol naturalesa que poguessin ocasionar, a títol enunciatiu: errors o omissions en els continguts, falta de disponibilitat del portal o la transmissió de virus o programes maliciosos o lesius en els continguts, malgrat haver adoptat totes les mesures tecnològiques necessàries per evitar-ho.</p>
+            </div>
+        </section>
+
+        <!-- POLÍTICA DE PRIVACITAT -->
+        <section id="privacidad" class="mb-20 pt-10 border-t border-gray-800">
+            <h1 class="font-display font-black text-4xl text-white mb-2">Política de Privacitat</h1>
+            <p class="text-brand-red font-bold uppercase text-sm mb-8">Protecció de Dades i RGPD</p>
+            
+            <div class="legal-content">
+                <p>En compliment del que estableix el Reglament (UE) 2016/679 del Parlament Europeu i del Consell, de 27 d'abril de 2016 (RGPD), i la Llei Orgànica 3/2018, de 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals (LOPDGDD), t'informem sobre el tractament de les teves dades personals.</p>
+
+                <h2>Qui és el responsable del tractament de les teves dades?</h2>
+                <p>El responsable és Service Racing in Competition (amb NIF/CIF B65561151), amb domicili a Carrer Pica d'Estats, 123. Sant Fruitós de Bages, 08272, Barcelona. Pots contactar a través del correu: admin2@srcservice.com.</p>
+
+                <h2>Amb quina finalitat tractem les teves dades personals?</h2>
+                <p>A SRC tractem la informació que ens faciliten les persones interessades amb les següents finalitats:</p>
+                <ul>
+                    <li><strong>Formulari de Contacte/Pressupost (WhatsApp):</strong> Gestionar i respondre a les sol·licituds de pressupost, consultes tècniques i dubtes enviades per l'usuari.</li>
+                    <li><strong>Subscripció (Base de dades):</strong> Enviar comunicacions comercials, informació sobre disponibilitat de compostos oficials, esdeveniments (trackdays) i ofertes exclusives, sempre que l'usuari hagi donat el seu consentiment exprés.</li>
+                </ul>
+
+                <h2>Per quant de temps conservarem les teves dades?</h2>
+                <p>Les dades personals proporcionades es conservaran mentre es mantingui la relació comercial, no se sol·liciti la seva supressió per l'interessat, o durant els anys necessaris per complir amb les obligacions legals.</p>
+
+                <h2>Quina és la legitimació per al tractament de les teves dades?</h2>
+                <p>La base legal per al tractament de les teves dades és el <strong>consentiment exprés</strong> que prestes en marcar la casella d'acceptació i enviar el formulari corresponent.</p>
+
+                <h2>A quins destinataris es comunicaran les teves dades?</h2>
+                <p>Les dades no se cediran a tercers excepte en els casos en què existeixi una obligació legal, o per a l'ús d'eines de gestió internes (com Google Workspace/Forms per a l'emmagatzematge de la base de dades de subscripcions, complint amb els estàndards de seguretat dels EUA-UE).</p>
+
+                <h2>Quins són els teus drets quan ens facilites les teves dades?</h2>
+                <p>Qualsevol persona té dret a obtenir confirmació sobre si estem tractant dades personals que els concerneixin, o no. Tens dret a accedir a les teves dades personals, rectificar-les, sol·licitar la seva supressió, limitar el seu tractament, oposar-te al mateix i sol·licitar la portabilitat de les teves dades.</p>
+                <p>Pots exercir aquests drets enviant un correu electrònic a <strong>admin2@srcservice.com</strong>, adjuntant una còpia del teu DNI o document equivalent.</p>
+            </div>
+        </section>
+
+        <!-- POLÍTICA DE GALETES -->
+        <section id="cookies" class="mb-20 pt-10 border-t border-gray-800">
+            <h1 class="font-display font-black text-4xl text-white mb-2">Política de Galetes</h1>
+            <p class="text-brand-red font-bold uppercase text-sm mb-8">Informació sobre emmagatzematge local</p>
+            
+            <div class="legal-content">
+                <p>Una galeta és un petit fitxer de text que es guarda al teu navegador quan visites gairebé qualsevol pàgina web. La seva utilitat és que la web sigui capaç de recordar la teva visita quan tornis a navegar per aquesta pàgina.</p>
+
+                <h2>Quines galetes utilitza aquesta pàgina web?</h2>
+                <p>Actualment, el lloc web de SRC està dissenyat per ser ràpid i respectuós amb la privacitat, per la qual cosa <strong>no utilitzem galetes de rastreig publicitari invasiu</strong>. Només utilitzem:</p>
+                <ul>
+                    <li><strong>Galetes Tècniques (Pròpies):</strong> Són aquelles necessàries per al correcte funcionament de la pàgina web (per exemple, recordar si has acceptat o no l'avís de galetes per no tornar a mostrar-t'ho).</li>
+                    <li><strong>Galetes de Tercers (Limitades):</strong> Atès que utilitzem Google Forms integrat per a la subscripció, Google pot injectar galetes tècniques estrictament necessàries per processar l'enviament del formulari amb seguretat enfront de correu brossa (spam).</li>
+                </ul>
+
+                <h2>Desactivació o eliminació de galetes</h2>
+                <p>En qualsevol moment podràs exercir el teu dret de desactivació o eliminació de galetes d'aquest lloc web. Aquestes accions es realitzen de forma diferent en funció del navegador que estiguis usant:</p>
+                <ul>
+                    <li><strong>Google Chrome:</strong> Configuració > Privacitat i seguretat > Galetes i altres dades de llocs.</li>
+                    <li><strong>Mozilla Firefox:</strong> Opcions > Privacitat i Seguretat > Galetes i dades del lloc.</li>
+                    <li><strong>Safari:</strong> Preferències > Privacitat > Bloquejar totes les galetes.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-8 border-t border-gray-800 text-center text-xs">
+        <p>&copy; 2024 SRC - Service Racing in Competition. Tots els drets reservats.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
