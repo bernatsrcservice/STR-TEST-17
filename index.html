@@ -82,7 +82,7 @@
         }
     </style>
 </head>
-<body class="font-sans antialiased">
+<body class="font-sans antialiased relative overflow-x-hidden">
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur border-b border-white/10">
@@ -206,7 +206,7 @@
         </div>
     </section>
 
-    <!-- CTA & Contact (WhatsApp) - CON NUEVO FONDO CLARITO + CAPA OSCURA -->
+    <!-- CTA & Contact (WhatsApp) -->
     <section id="contacto" class="py-24 relative overflow-hidden">
         <!-- Imagen de fondo clarita -->
         <div class="absolute inset-0 bg-[url('fondo-contactar.jpg')] bg-cover bg-center z-0"></div>
@@ -259,7 +259,7 @@
         </div>
     </section>
 
-    <!-- Technical Specs Section - AHORA MÁS COMPACTO (DASHBOARD STYLE) -->
+    <!-- Technical Specs Section -->
     <section id="medidas" class="py-24 bg-brand-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -268,11 +268,11 @@
                 <p class="mt-3 text-brand-yellow font-bold text-base uppercase tracking-wider max-w-2xl mx-auto">"We race what we sell and we sell what we race"</p>
             </div>
 
-            <!-- Cuadrícula 4 columnas en desktop para no dejar huecos -->
+            <!-- Cuadrícula 4 columnas, tarjetas GRIS OSCURO -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
                 
                 <!-- Card: Superbike -->
-                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                <div class="bg-gradient-to-br from-[#1c1c1c] to-[#121212] border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
                     <div class="flex justify-between items-center mb-3">
                         <h3 class="font-display font-bold text-lg text-white leading-none">SBK & Moto2/GP</h3>
                         <i data-lucide="trophy" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
@@ -291,7 +291,7 @@
                 </div>
 
                 <!-- Card: Supersport -->
-                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                <div class="bg-gradient-to-br from-[#1c1c1c] to-[#121212] border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
                     <div class="flex justify-between items-center mb-3">
                         <h3 class="font-display font-bold text-lg text-white leading-none">Supersport (SSP)</h3>
                         <i data-lucide="activity" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
@@ -312,7 +312,7 @@
                 </div>
 
                 <!-- Card: Moto3 / Talent -->
-                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                <div class="bg-gradient-to-br from-[#1c1c1c] to-[#121212] border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
                     <div class="flex justify-between items-center mb-3">
                         <h3 class="font-display font-bold text-lg text-white leading-none">Moto3 & Talent</h3>
                         <i data-lucide="chevrons-up" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
@@ -331,7 +331,7 @@
                 </div>
 
                 <!-- Card: R7 Cup -->
-                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
+                <div class="bg-gradient-to-br from-[#1c1c1c] to-[#121212] border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group">
                     <div class="flex justify-between items-center mb-3">
                         <h3 class="font-display font-bold text-lg text-white leading-none">R7 Cup</h3>
                         <i data-lucide="flag" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
@@ -350,7 +350,7 @@
                 </div>
 
                 <!-- Card: Mini Velocidad -->
-                <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group md:col-span-2 lg:col-span-4">
+                <div class="bg-gradient-to-br from-[#1c1c1c] to-[#121212] border border-white/10 p-5 rounded-lg hover:border-brand-yellow/50 transition-colors group md:col-span-2 lg:col-span-4">
                     <div class="flex justify-between items-center mb-3">
                         <h3 class="font-display font-bold text-lg text-white leading-none">Mini Velocidad</h3>
                         <i data-lucide="zap" class="text-brand-yellow w-5 h-5 group-hover:scale-110 transition-transform"></i>
@@ -461,18 +461,26 @@
         </div>
     </section>
 
-    <!-- Newsletter / Suscripción -->
-    <section id="suscripcion" class="py-16 bg-black border-t border-gray-800 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+    <!-- Newsletter / Suscripción (CON IMAGEN DE FONDO) -->
+    <section id="suscripcion" class="py-24 border-t border-gray-800 relative overflow-hidden">
+        <!-- Imagen de fondo -->
+        <div class="absolute inset-0 bg-[url('fondo-formulario.jpg')] bg-cover bg-center z-0"></div>
+        <!-- Filtro Oscuro (90% opacidad) para que el formulario siga viéndose profesional y legible -->
+        <div class="absolute inset-0 bg-brand-dark/90 backdrop-blur-sm z-0"></div>
+        
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <i data-lucide="mail" class="w-10 h-10 text-brand-yellow mx-auto mb-4"></i>
-            <h2 class="font-display font-bold text-3xl text-white mb-4">SUSCRIBIRSE</h2>
-            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Únete a nuestra base de datos. Sé el primero en enterarte de la disponibilidad de compuestos oficiales, trackdays y precios exclusivos.</p>
+            <i data-lucide="mail" class="w-12 h-12 text-brand-yellow mx-auto mb-4 drop-shadow-[0_0_15px_rgba(255,215,0,0.5)]"></i>
+            <h2 class="font-display font-black text-3xl text-white mb-4">SUSCRIBIRSE</h2>
+            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Únete a nuestra base de datos. Sé el primero en enterarte de la disponibilidad de compuestos oficiales, trackdays y precios exclusivos.</p>
             
-            <form id="subscribe-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfQbwY3vXa3H_9o9cYsgu3FK9uORkbCkRg0jWT-6ocM9snYPA/formResponse" method="POST" onsubmit="submitToGoogle(event)" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
+            <!-- Iframe oculto para capturar la redirección de Google Forms sin salir de la web -->
+            <script>var submitted = false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { document.getElementById('subscribe-form').style.display='none'; document.getElementById('success-message').style.display='block'; }"></iframe>
+
+            <form id="subscribe-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfQbwY3vXa3H_9o9cYsgu3FK9uORkbCkRg0jWT-6ocM9snYPA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
                 <!-- Tipo -->
                 <div class="md:col-span-2">
-                    <select name="entry.1001733497" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-gray-400 focus:border-brand-yellow focus:outline-none">
+                    <select name="entry.1001733497" required class="w-full bg-black/60 border border-gray-600 rounded p-3 text-gray-300 focus:border-brand-yellow focus:outline-none backdrop-blur-md">
                         <option value="" disabled selected>¿Eres un equipo o un particular?</option>
                         <option value="Equipo">Equipo</option>
                         <option value="Particular">Particular</option>
@@ -480,19 +488,19 @@
                 </div>
                 <!-- Nombre -->
                 <div>
-                    <input type="text" name="entry.1617724048" placeholder="Nombre completo o del Equipo" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                    <input type="text" name="entry.1617724048" placeholder="Nombre completo o del Equipo" required class="w-full bg-black/60 border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none backdrop-blur-md">
                 </div>
                 <!-- Email -->
                 <div>
-                    <input type="email" name="entry.216338073" placeholder="Email" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                    <input type="email" name="entry.216338073" placeholder="Email" required class="w-full bg-black/60 border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none backdrop-blur-md">
                 </div>
                 <!-- Teléfono -->
                 <div>
-                    <input type="tel" name="entry.1111651115" placeholder="Teléfono de contacto" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none">
+                    <input type="tel" name="entry.1111651115" placeholder="Teléfono de contacto" required class="w-full bg-black/60 border border-gray-600 rounded p-3 text-white focus:border-brand-yellow focus:outline-none backdrop-blur-md">
                 </div>
                 <!-- Idioma -->
                 <div>
-                    <select name="entry.699061243" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-gray-400 focus:border-brand-yellow focus:outline-none">
+                    <select name="entry.699061243" required class="w-full bg-black/60 border border-gray-600 rounded p-3 text-gray-300 focus:border-brand-yellow focus:outline-none backdrop-blur-md">
                         <option value="" disabled selected>Idioma de preferencia...</option>
                         <option value="Español">Español</option>
                         <option value="Inglés">Inglés</option>
@@ -501,7 +509,7 @@
                 </div>
                 <!-- Campeonato -->
                 <div class="md:col-span-2">
-                    <select name="entry.444856821" required class="w-full bg-brand-dark border border-gray-600 rounded p-3 text-gray-400 focus:border-brand-yellow focus:outline-none">
+                    <select name="entry.444856821" required class="w-full bg-black/60 border border-gray-600 rounded p-3 text-gray-300 focus:border-brand-yellow focus:outline-none backdrop-blur-md">
                         <option value="" disabled selected>Campeonato principal...</option>
                         <option value="Copa España">Copa España</option>
                         <option value="ESBK">ESBK</option>
@@ -515,22 +523,22 @@
                 <!-- Checkbox Legal -->
                 <div class="md:col-span-2 flex items-start mt-2">
                     <input type="checkbox" id="gf-privacidad" required class="mt-1 mr-2 accent-brand-yellow">
-                    <label for="gf-privacidad" class="text-xs text-gray-400">He leído y acepto la <a href="legales.html#privacidad" target="_blank" class="text-brand-yellow hover:underline">Política de Privacidad</a> para el tratamiento de mis datos.</label>
+                    <label for="gf-privacidad" class="text-xs text-gray-300">He leído y acepto la <a href="legales.html#privacidad" target="_blank" class="text-brand-yellow hover:underline font-bold">Política de Privacidad</a> para el tratamiento de mis datos.</label>
                 </div>
                 <!-- Botón -->
-                <div class="md:col-span-2 mt-2">
-                    <button type="submit" class="btn-primary py-3 px-8 font-bold text-black rounded w-full hover:scale-[1.02] transition-transform">UNIRME A LA BASE DE DATOS</button>
+                <div class="md:col-span-2 mt-4">
+                    <button type="submit" class="btn-primary py-4 px-8 font-bold text-black rounded w-full hover:scale-[1.02] transition-transform">UNIRME A LA BASE DE DATOS</button>
                 </div>
             </form>
 
             <!-- Mensaje de Éxito -->
-            <div id="success-message" style="display:none;" class="mt-4 p-8 bg-brand-dark border border-brand-yellow/50 rounded-xl max-w-2xl mx-auto shadow-2xl">
+            <div id="success-message" style="display:none;" class="mt-4 p-8 bg-brand-dark/90 backdrop-blur-md border border-brand-yellow/50 rounded-xl max-w-2xl mx-auto shadow-2xl">
                 <i data-lucide="check-circle" class="w-16 h-16 text-brand-yellow mx-auto mb-4"></i>
                 <h3 class="font-display font-black text-2xl text-white mb-2 uppercase">¡Suscripción completada!</h3>
-                <p class="text-gray-400">Tus datos han sido registrados en nuestra base de datos oficial. Nos pondremos en contacto contigo pronto.</p>
+                <p class="text-gray-300">Tus datos han sido registrados en nuestra base de datos oficial. Nos pondremos en contacto contigo pronto.</p>
             </div>
 
-            <p class="text-xs text-gray-600 mt-6 text-center">Cero spam. Solo información vital para bajar tus tiempos.</p>
+            <p class="text-xs text-gray-500 mt-8 text-center">Cero spam. Solo información vital para bajar tus tiempos.</p>
         </div>
     </section>
 
@@ -580,7 +588,7 @@
         </div>
     </footer>
 
-    <!-- Cookie Banner -->
+    <!-- Cookie Banner (se mantiene igual, fijo al fondo) -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-brand-dark/95 backdrop-blur border-t-2 border-brand-yellow/50 z-50 shadow-[0_-15px_50px_rgba(0,0,0,0.7)]">
         <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
             <p class="text-sm text-gray-300 text-center sm:text-left leading-relaxed">
@@ -592,52 +600,62 @@
         </div>
     </div>
 
+    <!-- NUEVO: Banner Deslizante de Suscripción (Estilo Cookies) a los 5 Segundos -->
+    <div id="promo-banner" class="fixed bottom-0 left-0 w-full bg-brand-dark/95 backdrop-blur border-t-2 border-brand-yellow z-40 shadow-[0_-15px_50px_rgba(0,0,0,0.8)] transform translate-y-full transition-transform duration-700 ease-in-out">
+        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4">
+                <i data-lucide="bell-ring" class="w-8 h-8 text-brand-yellow hidden sm:block shrink-0"></i>
+                <p class="text-sm font-bold text-white text-center sm:text-left uppercase tracking-wider">
+                    Suscríbete y recibe información, promociones e invitaciones a eventos.
+                </p>
+            </div>
+            <div class="flex shrink-0 w-full sm:w-auto gap-3 mt-2 sm:mt-0">
+                <button onclick="goToSuscripcion()" class="btn-primary px-8 py-3 text-sm font-bold w-full sm:w-auto tracking-wide">SUSCRIBIRSE</button>
+                <button onclick="closePromo()" class="px-4 py-3 text-sm font-bold text-gray-400 hover:text-white transition-colors">CERRAR</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Initialize Icons
         lucide.createIcons();
 
         // Enviar formulario principal por WhatsApp
         function sendToWhatsApp(event) {
-            event.preventDefault(); // Evita que la página se recargue
-
+            event.preventDefault(); 
             const nombre = document.getElementById('wp-nombre').value;
             const email = document.getElementById('wp-email').value;
             const medidas = document.getElementById('wp-medidas').value;
-
-            // Construir el mensaje
             const mensaje = `Hola, soy ${nombre}. Mi email es ${email} y estoy interesado en ${medidas}.`;
-
-            // Codificar el texto para la URL de WhatsApp
             const textoCodificado = encodeURIComponent(mensaje);
-
-            // Crear el enlace directo a WhatsApp
             const url = `https://wa.me/34625320696?text=${textoCodificado}`;
-
-            // Abrir WhatsApp
             window.open(url, '_blank');
         }
 
-        // Enviar formulario a Google Forms de forma nativa e invisible
-        function submitToGoogle(event) {
-            event.preventDefault(); // Evita que la página recargue de forma estándar
-            
-            const form = event.target;
-            const data = new FormData(form);
-            const action = form.action;
+        // Lógica del Nuevo Banner de Suscripción (Aparece a los 5 segundos)
+        const promoBanner = document.getElementById('promo-banner');
 
-            // Enviar datos por detrás forzando el modo "no-cors" para saltar bloqueos de seguridad
-            fetch(action, {
-                method: 'POST',
-                mode: 'no-cors',
-                body: data
-            }).then(() => {
-                // Ocultar formulario y mostrar mensaje de éxito inmediatamente
-                form.style.display = 'none';
-                document.getElementById('success-message').style.display = 'block';
-            }).catch((error) => {
-                alert('Hubo un error de conexión. Por favor, inténtalo de nuevo.');
-                console.error(error);
-            });
+        setTimeout(() => {
+            // Se muestra solo si no ha sido cerrado previamente en esta sesión
+            if (!sessionStorage.getItem('src_promo_shown')) {
+                if(promoBanner) {
+                    promoBanner.classList.remove('translate-y-full');
+                    sessionStorage.setItem('src_promo_shown', 'true');
+                }
+            }
+        }, 5000); // Aparece a los 5 segundos. Puedes cambiar este número (10000 = 10 segundos).
+
+        function closePromo() {
+            if(promoBanner) {
+                // Vuelve a esconder el banner deslizándolo hacia abajo
+                promoBanner.classList.add('translate-y-full');
+            }
+        }
+
+        function goToSuscripcion() {
+            closePromo(); // Cierra el banner
+            // Baja automáticamente hasta la sección del formulario de suscripción
+            document.getElementById('suscripcion').scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>
